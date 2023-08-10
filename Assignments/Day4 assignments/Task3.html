@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Grouping form using table</title>
+    </head>
+    <body>
+        <table border="1px">
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>Customer</legend>
+                        <form>           
+                            <label for="fname">First name:</label>
+                            <input type="text" id="fname" name="fname"><br><br>
+                            <label for="email">Email:</label>
+                            <input type="email" name="email"><br><br>
+                            <label for="investment">Investment</label>
+                            <input list="investment">
+                            <datalist id="investment">
+                                <option value="Less than one lakh">
+                                <option value="More than one lakh">
+                            </datalist><br/><br/>
+                            <label for="birthday">Date Joined:</label>
+                            <input type="date" id="birthday" name="birthday"><br/><br/>
+                            <label for="active">Active</label>
+                            <input type="checkbox" name="active"><br/><br/>
+                            <input type="submit" value="Ok"> <input type="reset" value="Cancel">
+                        </form>
+                    </fieldset>
+                </td>
+        </table>
+    </body>
+</html>
